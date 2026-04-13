@@ -1,0 +1,64 @@
+// data/instruments.ts
+export interface Instrument {
+  id: string;
+  name: string;
+  category: string;
+  price: number;
+  description: string;
+  image: string;
+  brand: string;
+  inStock: boolean;
+}
+
+export const instruments: Instrument[] = [
+  {
+    id: '1',
+    name: 'Fender Standard Stratocaster 3-Color Sunburst',
+    category: 'Электрогитары',
+    price: 89990,
+    description: 'Легендарная электрогитара Fender Stratocaster. Корпус из ольхи, гриф из клёна с накладкой из палисандра. Три сингловых звукоснимателя обеспечивают классическое яркое звучание.',
+    image: 'https://bxuiiaeu1l.a.trbcdn.net/aas/fw1/rb7/jco/ckw/okk/wko/4ck/g/aasfw1rb7jcockwokkwko4ckg.png',
+    brand: 'Fender',
+    inStock: true,
+  },
+  {
+    id: '2',
+    name: 'Yamaha FG800',
+    category: 'Акустические гитары',
+    price: 34990,
+    description: 'Акустическая гитара Yamaha FG800. Верхняя дека из цельной ели, нижняя дека и обечайка из нато и окоуме. Отличный выбор для начинающих и опытных музыкантов.',
+    image: 'https://bxuiiaeu1l.a.trbcdn.net/863/l08/p0f/kw0/88c/ogc/gws/8sw/4/863l08p0fkw088cogcgws8sw4.jpg',
+    brand: 'Yamaha',
+    inStock: true,
+  },
+  {
+    id: '3',
+    name: 'Roland TD-02KV',
+    category: 'Ударные установки',
+    price: 59990,
+    description: 'Электронная ударная установка Roland TD-02KV. Компактный размер, 15 готовых наборов ударных, встроенный метроном и функция обучения.',
+    image: 'https://bxuiiaeu1l.a.trbcdn.net/8dq/sh5/na0/gg8/kg4/k8c/gks/oo8/8/8dqsh5na0gg8kg4k8cgksoo88.jpg',
+    brand: 'Roland',
+    inStock: false,
+  },
+  {
+    id: '4',
+    name: 'Gibson Les Paul Tribute Satin Cherry Sunburst',
+    category: 'Электрогитары',
+    price: 189990,
+    description: 'Премиальная электрогитара Gibson Les Paul. Корпус из красного дерева, топ из клёна, гриф из красного дерева. Два хамбакера Burstbucker.',
+    image: 'https://bxuiiaeu1l.a.trbcdn.net/ac8/hqh/tx5/q0w/088/wwc/ocg/kog/ac8hqhtx5q0w088wwcocgkog0.png',
+    brand: 'Gibson',
+    inStock: true,
+  },
+  {
+    id: '5',
+    name: 'Korg B2',
+    category: 'Клавишные',
+    price: 42990,
+    description: 'Цифровое пианино Korg B2. 88 клавиш с молоточковой механикой, 12 тембров, встроенные эффекты реверберации и хоруса.',
+    image: 'https://bxuiiaeu1l.a.trbcdn.net/bvn/g6x/n6a/xsg/ogc/swc/4ow/cs4/8/bvng6xn6axsgogcswc4owcs48.jpg',
+    brand: 'Korg',
+    inStock: true,
+  },
+];
